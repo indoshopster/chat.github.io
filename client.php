@@ -26,11 +26,13 @@
   	  		
   	  		// parameter
   	  		var params = {
-			    "api_key": "78HHJYO091", 
-			    "template_id": 106, 
-			    "phone_number": 6299475799378, // nomor telpon customer
-			    "data": {
-					"apa": "Mr. Smith"
+			    "api_key": "YUUB787435673465GGsgr", 
+			    "template_id": 200043543856, 
+			    "phone_number": 6266324732846, // nomor telpon customer
+			    "data": { // pastikan data yang dikirin sesuai dengan template, nama key juga harus sama
+				"fullname": "Mr. Smith", 
+				"order_id": 67,
+				"order_date": "2018-10-09 17:30:00"
 			    }
 			};
 			
@@ -42,7 +44,7 @@
 			    data: JSON.stringify(params),
 			    contentType: 'application/json',
 			    method: "POST",
-			    url: 'http://localhost:1212/sendWhatsappMessage',
+			    url: 'http://chat.indoshopster.com:1212/sendWhatsappMessage',
 			    success: function(data) {
 		      	  	// callback
 		          	$(".response").append("response : \n"+JSON.stringify(data)+"\n\n");
