@@ -31,8 +31,32 @@ selain menggunakan indoshopster chat untuk mengirim/menerima pesan, Anda juga da
 ## Cara menggunakan API Indoshopster Chat
 1. Pastikan Anda telah terdaftar di Indoshopster Chat, jika belum klik Disini.
 2. Pastikan qr code whatsapp sudah terscan dihalaman chat
-2. Masuk kehalaman Setting.
-3. Masukan Alamat IP/domain Anda di daftar IP Whitelist
+3. Masuk kehalaman Setting.
 4. Catat API Key yang tertera
-5. Buat Template dengan tipe Message
+5. Buat Template jika belum memiliki template dengan tipe Message
 6. Setelah template berhasil dibuat, catat ID template yang tertera (untuk format/contoh template lihat disini)
+7. tambahkan code berikut untuk mengirim pesan
+
+## POST - sendWhatsappMessage
+1. Javascript
+```javascript
+<script type="text/javascript">
+  var params = {
+    "api_key": "78HHJYO09188392",
+	  "template_id": 104,
+	  "phone_number": 6299475799378,
+	  "data": {
+		  "fullname": "Mr. Smith",
+		  "order_id": 67,
+	  }
+  };
+  
+  $.ajax({
+      data: params,
+      url: 'http://chat.indoshopster.com:1212',                      
+      success: function(data) {
+          console.log(JSON.stringify(data));
+      }
+  });
+</script>
+```
