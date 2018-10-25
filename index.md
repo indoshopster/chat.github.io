@@ -44,7 +44,7 @@ selain menggunakan indoshopster chat untuk mengirim/menerima pesan, Anda juga da
 6. Setelah template berhasil dibuat, catat ID template yang tertera (untuk format/contoh template lihat disini)
 7. tambahkan code berikut untuk mengirim pesan
 
-# POST - sendWhatsappMessage
+# Contoh mengirim pesan menggunakan javascript
 ```
 <script type="text/javascript">
   var params = {
@@ -60,7 +60,7 @@ selain menggunakan indoshopster chat untuk mengirim/menerima pesan, Anda juga da
   $.ajax({
       data: params,
       method: "POST",
-      url: 'http://chat.indoshopster.com:1212',                      
+      url: 'http://chat.indoshopster.com:1212/sendWhatsappMessage',                      
       success: function(data) {
       	  // callback
           console.log(data);
@@ -68,3 +68,23 @@ selain menggunakan indoshopster chat untuk mengirim/menerima pesan, Anda juga da
   });
 </script>
 ```
+
+## Parameter
+| Key  |  Required | Type  | Description  |
+| ------------ | ------------ | ------------ | ------------ |
+|  api_key |  yes | string  |  digunakan untuk autentikasi request API |
+|  template_id | yes  | integer  | digunakan sebagai pesan (body text) yang dikirim ke customer  |
+| phone_number  | yes  | integer  | no.telp customer, pastikan ini adalah nomor whatsapp. harus diawali dengan kode negara (contoh: 62 - untuk indonesia)  |
+| data  |  yes | object  |  untuk data ini disesuaikan dengan data yang dibutuhkan di template, jadi kebutuhannya dinamis sesuai template yang digunakan. jumlah parameter harus sama, nama key harus sama |
+
+
+## Response
+|  response  |  description  |
+| ------------ | ------------ |
+|  wrong required data  |  terjadi kesalahan pada data/parameter yang Anda kirimkan, lihat keterangan diatas untuk lebih detailnya  |
+|  template not found  |  template yang akan anda gunakan tidak ada  |
+|  phone parameter should contain...  |  format no.telp salah  |
+|  wrong api key  |  api key yang anda masukan tidak ditemukan  |
+
+
+
