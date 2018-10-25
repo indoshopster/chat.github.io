@@ -26,6 +26,7 @@ Anda dapat mencari history chat dengan lebih cepat
 
 fitur ini memudahkan Anda dalam membalas pesanan agar lebih cepat, karena sudah Anda buat templatenya. tanpa harus mengetik hal yang sama berulang2.
 
+
 - multiple user
 dengan Indoshopster chat Anda dapat menggunakan 1 nomor whatsapp untuk banyak user/PC. sehingga Anda dapat mengurangi biaya operasional Anda.
 
@@ -34,6 +35,8 @@ dengan Indoshopster chat Anda dapat menggunakan 1 nomor whatsapp untuk banyak us
 
 # API Indoshopster Chat
 selain menggunakan indoshopster chat untuk mengirim/menerima pesan, Anda juga dapat menggunakan API kami untuk mengirim pesan dari website Anda langsung ke customer. Mulai dari Mengirim rincian pemesanan, informasi nomor resi, dll.
+
+[![Message Template](https://i.imgur.com/zB7qCAA.png "Message Template")](https://i.imgur.com/zB7qCAA.png "Message Template")
 
 # Cara menggunakan API Indoshopster Chat
 1. Pastikan Anda telah terdaftar di Indoshopster Chat, jika belum klik Disini.
