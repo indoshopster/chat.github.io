@@ -61,7 +61,8 @@ selain menggunakan indoshopster chat untuk mengirim/menerima pesan, Anda juga da
   };
   
   $.ajax({
-      data: params,
+      data: JSON.stringify(params),
+      contentType: 'application/json',
       method: "POST",
       url: 'http://chat.indoshopster.com:1212/sendWhatsappMessage',                      
       success: function(data) {
