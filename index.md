@@ -74,7 +74,7 @@ selain menggunakan indoshopster chat untuk mengirim/menerima pesan, Anda juga da
 </script>
 ```
 
-## Parameter - https://github.com/indoshopster/chat#parameter
+## Parameter - [Lihat versi jelasnya](https://github.com/indoshopster/chat#parameter)
 | Key  |  Required | Type  | Description  |
 | ------------ | ------------ | ------------ | ------------ |
 |  api_key |  yes | string  |  digunakan untuk autentikasi request API |
@@ -83,7 +83,7 @@ selain menggunakan indoshopster chat untuk mengirim/menerima pesan, Anda juga da
 | data  |  yes | object  |  untuk data ini disesuaikan dengan data yang dibutuhkan di template, jadi kebutuhannya dinamis sesuai template yang digunakan. jumlah parameter harus sama, nama key harus sama |
 
 
-## Response - https://github.com/indoshopster/chat#response
+## Response - [Lihat versi jelasnya](https://github.com/indoshopster/chat#response)
 |  response  |  description  |
 | ------------ | ------------ |
 |  wrong required data  |  terjadi kesalahan pada data/parameter yang Anda kirimkan, lihat keterangan diatas untuk lebih detailnya  |
