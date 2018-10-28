@@ -38,6 +38,7 @@ selain menggunakan indoshopster chat untuk mengirim/menerima pesan, Anda juga da
 
 [![Message Template](https://i.imgur.com/zB7qCAA.png "Message Template")](https://i.imgur.com/zB7qCAA.png "Message Template")
 
+
 # Cara menggunakan API Indoshopster Chat
 1. Pastikan Anda telah terdaftar di Indoshopster Chat, jika belum klik Disini.
 2. Pastikan qr code whatsapp sudah terscan dihalaman chat
@@ -75,21 +76,13 @@ selain menggunakan indoshopster chat untuk mengirim/menerima pesan, Anda juga da
 ```
 
 ## Parameter - [Lihat versi jelasnya](https://github.com/indoshopster/chat#parameter)
-| Key  |  Required | Type  | Description  |
-| ------------ | ------------ | ------------ | ------------ |
-|  api_key |  yes | string  |  digunakan untuk autentikasi request API |
-|  template_id | yes  | integer  | digunakan sebagai pesan (body text) yang dikirim ke customer  |
-| phone_number  | yes  | integer  | no.telp customer, pastikan ini adalah nomor whatsapp. harus diawali dengan kode negara (contoh: 62 - untuk indonesia)  |
-| data  |  yes | object  |  untuk data ini disesuaikan dengan data yang dibutuhkan di template, jadi kebutuhannya dinamis sesuai template yang digunakan. jumlah parameter harus sama, nama key harus sama |
+
+[![Parameter](https://preview.ibb.co/heLyOA/Screen-Shot-2018-10-28-at-9-41-50-AM.png "Parameter")](https://preview.ibb.co/heLyOA/Screen-Shot-2018-10-28-at-9-41-50-AM.png "Parameter")]
 
 
 ## Response - [Lihat versi jelasnya](https://github.com/indoshopster/chat#response)
-|  response  |  description  |
-| ------------ | ------------ |
-|  wrong required data  |  terjadi kesalahan pada data/parameter yang Anda kirimkan, lihat keterangan diatas untuk lebih detailnya  |
-|  template not found  |  template yang akan anda gunakan tidak ada  |
-|  phone parameter should contain...  |  format no.telp salah  |
-|  wrong api key  |  api key yang anda masukan tidak ditemukan  |
+
+[![Response](https://preview.ibb.co/n8yXGV/Screen-Shot-2018-10-28-at-9-41-57-AM.png "Response")](https://preview.ibb.co/n8yXGV/Screen-Shot-2018-10-28-at-9-41-57-AM.png "Response")]
 
 
 
